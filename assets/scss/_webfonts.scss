@@ -1,0 +1,28 @@
+
+
+
+
+$font-styles: (
+  'SuisseNeue-Light',
+  'SuisseNeue-LightItalic',
+  'SuisseNeue-Medium',
+  'SuisseNeue-MediumItalic',
+  'SuisseNeue-Regular',
+  'SuisseNeue-RegularItalic'
+);
+
+@each $style in $font-styles {
+
+  @font-face {
+    font-family: '#{$style}-WebS';
+    src: url('/fonts/suisse-neue/#{$style}-WebS.woff2') format('woff2'),
+      url('/fonts/suisse-neue/#{$style}-WebS.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: '#{$style}-WebXL';
+    src: url('/fonts/suisse-neue/#{$style}-WebXL.woff2') format('woff2'),
+    url('/fonts/suisse-neue/#{$style}-WebXL.woff') format('woff');
+  }
+
+}

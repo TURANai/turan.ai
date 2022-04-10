@@ -1,0 +1,27 @@
+<header>
+
+  <nav>
+
+    <h1>
+      {{ readFile "static/svg/logos/logo-turan.svg" | safeHTML }}
+    </h1>
+
+    <a class="nav-info" href="#info">
+      {{ readFile "static/svg/icons/info.svg" | safeHTML }}
+    </a>
+
+    <a class="nav-contact" href="#contact">
+      {{ readFile "static/svg/icons/contact.svg" | safeHTML }}
+    </a>
+
+    <a class="nav-back nav-back-info" href="#base">
+      {{ readFile "static/svg/icons/arrow.svg" | safeHTML }}
+    </a>
+
+    <a class="nav-back nav-back-contact" href="#base">
+      {{ readFile "static/svg/icons/arrow.svg" | safeHTML }}
+    </a>
+
+  </nav>
+
+</header>

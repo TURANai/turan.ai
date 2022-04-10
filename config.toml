@@ -1,0 +1,36 @@
+baseURL = "https://turan.ai/"
+googleAnalytics = "G-MQ9QZWFF43"
+languageCode = "en-us"
+title = "TURAN"
+
+[params]
+  key = "value"
+  [params.nested]
+    key = "value"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = true
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    weight = 20
+    baseURL = "https://turan.ai/"
+    contentDir = "content/en"
+    languageName = "English"
+    title = "TURAN"
+    description = "Aspiration and Inspiration"
+    company_name = "TURAN"
+    copyright = "All Rights Reserved"
+    
