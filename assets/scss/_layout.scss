@@ -140,6 +140,13 @@ body {
     .nav-back-contact {
       right: 0;
     }
+
+    #base {
+      left: -100%;
+    }
+    #contact {
+      left: 0;
+    }
   }
 
   &.info {
@@ -166,8 +173,15 @@ body {
     .nav-back-info {
       left: 0;
     }
-  }
 
+    #base {
+      left: 100%;
+    }
+    
+    #info {
+      left: 0;
+    }
+  }
 
 }
 
@@ -176,7 +190,7 @@ body {
 // 
 
 main {
-  min-height: calc(100vh - 176px);
+  min-height: calc(100vh - 160px);
 
   @include media(">sm") {
     min-height: calc(100vh - 304px);
@@ -184,18 +198,24 @@ main {
 }
 
 .content {
-  min-height: calc(100vh - 176px);
+  min-height: calc(100vh - 160px);
+  width: 100%;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  transition: left 0.5s ease, right 0.5s ease, margin-left 0.5s ease, margin-right 0.5s ease, opacity 0.5s ease;
 
   @include media(">sm") {
+    padding: 24px 64px;
     min-height: calc(100vh - 304px);
   }
 }
 
 #base {
+  left: 0;
+
   .featured {
     margin-top: 16.67%;
     display: flex;
@@ -219,6 +239,20 @@ main {
   }
 }
 
+#contact {
+  left: 100%;
+}
+
+#info {
+  left: -100%;
+  display: flex;
+  align-items: center;
+
+  p {
+    max-width: 640px;;
+  }
+}
+
 //
 // Footer
 //
@@ -226,6 +260,8 @@ main {
 body > footer {
   padding: 24px 32px;
   text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.714;
 
   @include media(">sm") {
     padding: 64px;
