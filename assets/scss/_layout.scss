@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: map-get($brand-colors, day);
+  background-color: $color-ui-white;
 }
 
 //
@@ -19,25 +19,49 @@ body > header {
   display: flex;
   align-items: center;
   justify-content: stretch;
-  height: 152px;
-  padding: 0 64px;
+  height: 88px;
+  padding: 0 24px;
+
+  @include media(">sm") {
+    height: 152px;
+    padding: 0 64px;
+  }
 
   nav {
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 32px;
+
+    @include media(">sm") {
+      height: 40px
+    }
   }
 
   a {
     position: absolute;
     top: 2px;
     display: block;
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
     transition: left 0.5s ease, right 0.5s ease, margin-left 0.5s ease, margin-right 0.5s ease, opacity 0.5s ease;
 
     &:hover {
       opacity: 0.6;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include media(">sm") {
+      width: 36px;
+      height: 36px;
+
+      svg {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 
@@ -62,14 +86,28 @@ body > header {
   h1 {
     position: absolute;
     left: 50%;
-    width: 221px;
-    height: 40px;
-    margin: 0 0 0 -110px;
+    width: 177px;
+    height: 32px;
+    margin: 0 0 0 -88px;
     opacity: 0.6;
     transition: left 0.5s ease, right 0.5s ease, margin-left 0.5s ease, margin-right 0.5s ease, opacity 0.5s ease;
 
     svg {
       display: block;
+      width: 177px;
+      height: 32px;
+    }
+
+    @include media(">sm") {
+      width: 221px;
+      height: 40px;
+      margin: 0 0 0 -110px;
+
+      svg {
+        display: block;
+        width: 221px;
+        height: 40px;
+      }
     }
   }
 
@@ -85,7 +123,11 @@ body {
     h1 {
       left: 0;
       margin-left: 0;
-      opacity: 0.3;
+      opacity: 0;
+
+      @include media(">sm") {
+        opacity: 1;
+      }
     }
     .nav-contact {
       right: 50%;
@@ -104,7 +146,11 @@ body {
     h1 {
       left: 100%;
       margin-left: -221px;
-      opacity: 0.3;
+      opacity: 0;
+      
+      @include media(">sm") {
+        opacity: 1;
+      }
     }
   
     .nav-contact {
@@ -130,15 +176,23 @@ body {
 // 
 
 main {
-  min-height: calc(100vh - 304px);
+  min-height: calc(100vh - 176px);
+
+  @include media(">sm") {
+    min-height: calc(100vh - 304px);
+  }
 }
 
 .content {
-  min-height: calc(100vh - 304px);
+  min-height: calc(100vh - 176px);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @include media(">sm") {
+    min-height: calc(100vh - 304px);
+  }
 }
 
 #base {
@@ -170,6 +224,10 @@ main {
 //
 
 body > footer {
-  padding: 64px 64px;
+  padding: 24px 32px;
   text-align: center;
+
+  @include media(">sm") {
+    padding: 64px;
+  }
 }

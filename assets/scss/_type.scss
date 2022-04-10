@@ -31,8 +31,7 @@ strong, bold {
 }
 
 ::selection {
-  background: map-get($brand-colors, cyan);
-  color: map-get($brand-colors, night);
+  background: $color-ui-black10;
 }
 
 

@@ -1,19 +1,8 @@
 // Colors
 
-$brand-colors: (
-  pink:     #FF00AF,
-  cyan:     #00F3FF,
-  purple:   #5B10FF,
-  green:    #02B31B,
-  yellow:   #F1EE05,
-  red:      #E91E63,
-  night:    #080820,
-  evening:  #16162B,
-  day:      #FAFAFA,
-  smoke:    #404040,
-  paper:    #F4F3F6,
-  white:    #FFFFFF
-);
+// $brand-colors: (
+//   red:     #FF00AF,
+// );
 
 $color-ui-black:                black;
 $color-ui-black80:              rgba(0,0,0,0.8);
@@ -32,12 +21,7 @@ $color-ui-white10:              rgba(255,255,255,0.1);
 $color-ui-scent:                #F4F3F6;
 
 $color-ui-default:              $color-ui-black;
-$color-ui-action:               map-get($brand-colors, pink);
-
-$color-ui-red:                  map-get($brand-colors, red);
-$color-ui-green:                map-get($brand-colors, green);
-
-$color-linkedin:                #0077B5;
+$color-ui-action:               $color-ui-black60;
 
 
 // Typography
