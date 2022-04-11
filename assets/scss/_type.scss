@@ -103,32 +103,8 @@ p, .p {
   letter-spacing: $body-md-letter-spacing;
 }
 
-form {
-  p, .p {
-    margin-bottom: $body-md-line-height;
-
-    &:last-of-type {
-      margin-bottom: $body-md-line-height;
-    }
-  }
-}
-
-.lg {
-  @include media(">md") {
-    font-size: $body-lg-font-size;
-    line-height: $body-lg-line-height;
-    font-weight: $body-lg-font-weight;
-    margin-bottom: $body-lg-margin-bottom;
-    letter-spacing: $body-lg-letter-spacing;
-  }
-}
-
-small, .small {
-  font-size: $body-sm-font-size;
-  line-height: $body-sm-line-height;
-  font-weight: $body-sm-font-weight;
-  margin-bottom: $body-sm-margin-bottom;
-  letter-spacing: $body-sm-letter-spacing;
+strong {
+  font-weight: $font-weight-medium;
 }
 
 em {

@@ -24,3 +24,12 @@ content:
     label: contact
     email: info@turan.ai
 ---
+
+We are model agency of artists, designers and engineers working with technology-inclined brands to research and design digital humans.
+
+<em>“Life in plastic, it's fantastic!
+Imagination, life is your creation”</em>
+– Barbie Girl, Aqua
+
+Our first dot (model) named **•iris** is currently in R&D phase. Get in touch with us to discuss how your brand can benefit from digital models.
+
