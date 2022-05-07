@@ -26,25 +26,29 @@
 
   <main>
 
-    <section id="base" class="content">
-      <div class="featured">
-        <div class="dot-name">
-          {{ readFile "static/svg/icons/dot.svg" | safeHTML }}
-          {{ .Params.content.base.featured.name }}
+    <div class="wrapper">
+
+      <section id="base" class="content">
+        <div class="featured">
+          <div class="dot-name">
+            {{ readFile "static/svg/icons/dot.svg" | safeHTML }}
+            {{ .Params.content.base.featured.name }}
+          </div>
+          <div class="dot-status">{{ .Params.content.base.featured.status }}</div>
         </div>
-        <div class="dot-status">{{ .Params.content.base.featured.status }}</div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="content">
-      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
-    </section>
+      <section id="contact" class="content">
+        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      </section>
 
-    <section id="info" class="content">
-      <div>
-        {{ .Content }}
-      </div>
-    </section>
+      <section id="info" class="content">
+        <div>
+          {{ .Content }}
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
